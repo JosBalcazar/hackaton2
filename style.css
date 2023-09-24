@@ -13,46 +13,108 @@ body {
   margin: 0;
 }
 
-.secc-1 {
-  color: azul;
-  background-image: url("/Main.png");
-  background-position: center;
-  background-size: cover;
-  /* height: 80vh; */
-  height: 80vw;
+/* Seccion 1 */
+.secc1 {
+  background-image: url("/img/Main.png");
+  background-position: center; /* Centra la imagen */
+  background-size: cover; /* La imagen se estira al contenedor */
   position: relative;
 
-  /* width: 960px; */
-  /* height: 525px; */
+  /* minimo, valor, maximo */
+  height: clamp(200px, 80vw, 100vh);
 
-  height: clamp(200px, 80vw, 80vh);
+  /* width: 80vw; */
+  /* height: 525px; */
 }
 
-.hero-title {
+.secc1-h1 {
   position: absolute;
   top: 0;
   right: 0;
-  color: white;
-  font-size: 60px;
+
+  color: yellow;
+  font-size: 15ch;
   margin-right: 20px;
 }
 
-.hero-text {
+.secc1-p {
   position: absolute;
   bottom: 0;
   left: 0;
 
   background: #7299fe80;
-
   padding: 10px;
   color: white;
   margin-left: 20px;
-  font-size: 20px;
+  font-size: 50px;
 }
-/* 
-progress {
+
+/* Seccion 2 */
+.secc2 {
+  position: relative;
+  background: #7299fe;
+  height: clamp(200px, 80vw, 50vh);
+}
+
+.secc2-h2 {
+  color: #1d06a7;
+  font-size: 50px;
+  text-align: center;
+}
+
+.secc2-p {
+  color: white;
+  /* margin-left: 30px; */
+  /* margin-right: 30px; */
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.secc2-bt {
+  position: absolute;
+  background: #d16fff;
+  font-size: 3ch;
+  color: white;
+
+  width: 187px;
+  height: 62px;
+  border-radius: 20px;
+
+  bottom: 20px;
+  left: 30px;
+}
+
+/* Seccion 3 */
+/* Mis Skillis */
+.secc3 {
+  position: relative;
+  background: #9022ff;
+  height: clamp(200px, 80vw, 40vh);
+}
+
+.secc3 h2 {
+  text-align: center;
+  font-size: 50px;
+  color: aqua;
+}
+
+.secc3-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5rem; /* Separacion */
+
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.secc3 div {
+  color: white;
+  font-size: 2.5ch;
+}
+
+.secc3 progress {
   width: 100%;
-} */
+}
 
 progress::-webkit-progress-bar {
   border-radius: 10cm;
@@ -64,108 +126,101 @@ progress::-webkit-progress-value {
   background: purple;
 }
 
-/* .secc-3 progress {
+/* .secc3 progress {
   width: 100%;
   justify-items: stretch;
 } */
 
-.secc-4 img {
-  width: 200px;
-}
-
-.secc-5 img {
-  width: 100px;
-}
-
-.secc-2 {
-  background: #7299fe;
-
-  /* width: 960px;
-  height: 424px;
-  top: 525px; */
-
-  height: clamp(70px, 80vw, 50vh);
-}
-
-.sobre-Tit {
-  color: #1d06a7;
-  font-family: Lato;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 43px;
-  letter-spacing: 0em;
-  text-align: center;
-}
-
-.bt1 {
-  background: #d16fff;
-  width: 187px;
-  height: 62px;
-  top: 811px;
-  left: 38px;
-  border-radius: 20px;
-
-  /* position: absolute; */
-  /* bottom: 20px; */
-  /* left: 0; */
-}
-
-.parr-sobreMi {
-  color: white;
-  /* margin-left: 30px; */
-  /* margin-right: 30px; */
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-.secc-3 {
-  background: #9022ff;
-  height: clamp(70px, 80vw, 50vh);
-  /* height: 10px; */
-}
-
-.secc-3 h2 {
-  text-align: center;
-  font-size: 30px;
-}
-
-.secc-4 {
+/* PORTAFOLIO */
+.secc4 {
   background: #ffd233;
   height: clamp(70px, 80vw, 60vh);
+  padding: 20px;
 }
 
-.secc-4 img {
-  margin-bottom: 10px;
+.secc4 section {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  column-gap: 2rem;
+  row-gap: 1rem;
+
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.secc4 img {
   border: solid;
+  width: 100%;
+  height: clamp(50px, 10vw, 15vh);
 }
 
-.secc-4 h2 {
+.secc4 h2 {
   text-align: center;
-  font-size: 30px;
+  font-size: 50px;
+  color: darkcyan;
 }
 
-.secc-5 {
+/* CLIENTES */
+.secc5 {
   background: #3f4e62;
   height: clamp(70px, 80vw, 30vh);
 }
 
-.secc-5 h2 {
+.secc5 h2 {
   text-align: center;
-  font-size: 30px;
+  font-size: 50px;
+  color: chartreuse;
 }
 
-.secc-5 img {
+.secc5 section {
+  display: flex;
+  padding-left: 20px;
+}
+
+.secc5 img {
   width: 200px;
   align-items: center;
   margin-left: 20px;
   margin-right: 20px;
 }
 
-.wrapper-mis-skills {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
+/* FORMULARIO */
+.secc6 {
+  position: relative;
+  background: darkcyan;
+  height: clamp(200px, 80vw, 70vh);
 }
 
-.wrapper-mis-skills progress {
+.secc6 h2 {
+  text-align: center;
+  color: crimson;
+  font-size: 50px;
+}
+
+.secc6 form {
+  display: flex;
+  flex-flow: column nowrap;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.secc6 section {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+
+  column-gap: 2rem; /* Separacion */
+  row-gap: 2rem;
+  padding-bottom: 2rem;
+}
+
+.secc6 textarea {
+  padding-top: 10rem;
+}
+
+.secc6 input {
+  height: 50px;
+}
+
+.secc6 button {
+  width: 10%;
 }
