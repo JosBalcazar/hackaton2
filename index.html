@@ -4,30 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
     <!-- Bloque 1: Hero -->
-    <section>
-      <h1>FrontEnd</h1>
+    <section class="secc-1">
+      <h1 class="hero-title">FrontEnd</h1>
       <!-- Puede ser un h2 o div tambien -->
-      <p>Hola, mi nombre es Jose Balcazar</p>
+      <p class="hero-text">
+        Hola, mi nombre<br />
+        es Jose Balcazar
+      </p>
     </section>
 
     <!-- Bloque 2: Sobre Mi -->
-    <section>
-      <h2>Sobre mi</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis neque
-        accusamus eligendi autem beatae animi adipisci vel nostrum porro
-        quaerat. Inventore, nesciunt facere. Optio, tempore! Repellat velit
-        rerum molestias sunt!
+    <section class="secc-2">
+      <h2 class="sobre-Tit">Sobre mi</h2>
+      <p class="parr-sobreMi">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint alias
+        voluptas, aut inventore minus natus excepturi nesciunt laudantium
+        voluptates nostrum delectus deleniti atque tempora a ad rerum ab debitis
+        repudiandae? <br />
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam,
+        asperiores inventore. Vero illo, soluta non optio voluptatem animi
+        libero cumque ducimus aperiam officiis voluptatibus assumenda dolorum
+        qui eius maiores tempore? <br />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, ipsam.
+        Reprehenderit, ab quos unde ea nesciunt consequatur. Quae, provident,
+        impedit obcaecati quasi iste repellat totam dolores deleniti amet natus
+        saepe. <br />
       </p>
       <!-- <input type="button" value="Ver CV"> -->
-      <button>Ver CV</button>
+      <button class="bt1">Ver CV</button>
     </section>
 
     <!-- Bloque 3: Mis Skills -->
-    <section>
+    <section class="secc-3">
       <h2>Mis Skills</h2>
       <div class="wrapper-mis-skills">
         <!-- Elemento 1 -->
@@ -69,32 +81,37 @@
     </section>
 
     <!-- Bloque 4: Portafolio -->
-    <section>
+    <section class="porta">
       <h2>Portafolio</h2>
-      <section><img src="/P1.png" alt="" /></section>
-      <section><img src="/P2.png" alt=""></section>
-      <section><img src="/P3.png" alt=""></section>
-      <section><img src="/P4.png" alt=""></section>
-      <section><img src="/P5.png" alt=""></section>
-      <section><img src="/P6.png" alt=""></section>
-      <section><img src="/P7.png" alt=""></section>
-      <section><img src="/P8.png" alt=""></section>
+      <img src="/P1.png" alt="" />
+      <img src="/P2.png" alt="" />
+      <img src="/P3.png" alt="" />
+      <img src="/P4.png" alt="" />
+      <img src="/P5.png" alt="" />
+      <img src="/P6.png" alt="" />
+      <img src="/P7.png" alt="" />
+      <img src="/P8.png" alt="" />
     </section>
 
     <!-- Bloque 5: Clientes -->
-    <section>
+    <section class="cli">
       <h2>Clientes</h2>
-      <section><img src="/ferme.png" alt=""></section>
-      <section><img src="/dotmatics.png" alt=""></section>
-      <section><img src="/ferme.png" alt=""></section>
-      <section><img src="/aliance.png" alt=""></section>
+      <img src="/ferme.png" alt="" />
+      <img src="/dotmatics.png" alt="" />
+      <img src="/ferme.png" alt="" />
+      <img src="/aliance.png" alt="" />
     </section>
-
 
     <!-- Bloque 6: Contacto -->
     <section>
-      
-
+      <form action="">
+        <input type="text" name="Nombre" placeholder="Nombre" />
+        <input type="text" name="Apellido" placeholder="Apellido" /><br />
+        <input type="email" name="Email" placeholder="Enail" />
+        <input type="tel" name="Telefono" placeholder="Telefono" /><br />
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <button>Enviar</button>
+      </form>
     </section>
   </body>
 </html>

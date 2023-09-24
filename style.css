@@ -1,0 +1,102 @@
+/* Reglas de reseteo */
+/* alternativa: */
+/* *{
+    margin: 0;
+} */
+
+body {
+  margin: 0;
+}
+
+.secc-1 {
+  color: azul;
+  background-image: url("/Main.png");
+  background-position: center;
+  background-size: cover;
+  /* height: 80vh; */
+  height: 80vw;
+  position: relative;
+
+  /* width: 960px; */
+  /* height: 525px; */
+
+  height: clamp(200px, 80vw, 80vh);
+}
+
+.hero-title {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: white;
+  font-size: 60px;
+  margin-right: 20px;
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  background: #7299fe80;
+
+  padding: 10px;
+  color: white;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+progress::-webkit-progress-bar {
+  border-radius: 10em;
+  background: rgb(217, 217, 217);
+}
+
+progress::-webkit-progress-value {
+  border-radius: 10em;
+  background: purple;
+}
+
+.porta img {
+  width: 200px;
+}
+
+.cli img {
+  width: 100px;
+}
+
+.secc-2 {
+  background: #7299fe;
+
+  /* width: 960px;
+  height: 424px;
+  top: 525px; */
+
+  height: clamp(70px, 80vw, 50vh);
+}
+
+.sobre-Tit {
+  color: #1d06a7;
+  font-family: Lato;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.bt1 {
+  background: #d16fff;
+  width: 187px;
+  height: 62px;
+  top: 811px;
+  left: 38px;
+  border-radius: 20px;
+}
+
+.parr-sobreMi {
+  color: white;
+}
+
+.secc-3 {
+  background: #9022ff;
+  height: clamp(70px, 80vw, 50vh);
+}
